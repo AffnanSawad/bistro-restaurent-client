@@ -22,7 +22,7 @@ const Navbar = () => {
        <li className="font-bold"> <Link to="/contact">Contact</Link>   </li>
        <li className="font-bold"> <Link to="/menu">Our Menu</Link>   </li>
        <li className="font-bold"> <Link to="/order/salad">Order Food</Link>   </li>
-       <li className="font-bold"> <Link to="">
+       <li className="font-bold"> <Link to="/dashboard">
        
        <button className="btn">
        <FaShoppingCart className="mr-4" />
