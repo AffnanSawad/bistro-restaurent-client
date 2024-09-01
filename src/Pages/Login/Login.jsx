@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import Swal from 'sweetalert2'
 import { AuthContext } from '../../providers/AuthProviders';
 import img from '../../assets/others/authentication.gif'
+import SocialLogin from '../../Components/SocialLogin/SocialLogin';
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true);
@@ -94,7 +95,10 @@ const Login = () => {
                                 <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
-                        <p className='m-10 font-bold'><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
+                        <p className='mx-8 font-bold'><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
+                    
+                    <SocialLogin></SocialLogin>
+                    
                     </div>
                 </div>
             </div>
