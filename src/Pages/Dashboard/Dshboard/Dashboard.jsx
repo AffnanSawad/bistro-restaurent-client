@@ -15,6 +15,9 @@ const Dashboard = () => {
             {/* dashboard side bar */}
             <div className="w-64 min-h-screen bg-orange-400">
                 <ul className="menu p-4">
+
+                
+                            
                     {
                         isAdmin ? <>
                             <li>
@@ -27,11 +30,7 @@ const Dashboard = () => {
                                     <FaUtensils></FaUtensils>
                                     Add Items</NavLink>
                             </li>
-                            <li>
-                                <NavLink to="/dashboard/manageItems">
-                                    <FaList></FaList>
-                                    Manage Items</NavLink>
-                            </li>
+                           
                             <li>
                                 <NavLink to="/dashboard/bookings">
                                     <FaBook></FaBook>
@@ -60,6 +59,21 @@ const Dashboard = () => {
                                         <FaShoppingCart></FaShoppingCart>
                                         My Cart ({cart.length})</NavLink>
                                 </li>
+                                <li>
+                                <NavLink to="/dashboard/addItems">
+                                    <FaUtensils></FaUtensils>
+                                    Add Items</NavLink>
+                            </li>
+
+                              
+
+                            <li>
+                                <NavLink to="/dashboard/manageItems">
+                                    <FaList></FaList>
+                                    Manage Items</NavLink>
+                            </li>
+
+
                                 <li>
                                     <NavLink to="/dashboard/review">
                                         <FaAd></FaAd>
