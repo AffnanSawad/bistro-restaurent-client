@@ -16,6 +16,8 @@ import Dashboard from "../Pages/Dashboard/Dshboard/Dashboard";
 import AddItems from "../Pages/Dashboard/Dshboard/AddItems/AddItems";
 import ManageItems from "../Pages/Dashboard/Dshboard/ManageItems/ManageItems";
 import UpdateItem from "../Pages/Dashboard/Dshboard/UpdateItem/UpdateItem";
+import Payment from "../Pages/Dashboard/Dshboard/Payment/Payment";
+import PaymentHistory from "../Pages/Dashboard/Dshboard/PaymentHistory/PaymentHistory";
 // import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 // import SignUp from "../Pages/SignUp/SignUp";
 
@@ -66,6 +68,14 @@ import UpdateItem from "../Pages/Dashboard/Dshboard/UpdateItem/UpdateItem";
         {
           path: 'cart',
           element: <Cart></Cart>
+        },
+        {
+          path: 'payment',
+          element: <Payment></Payment>
+        },
+        {
+          path: 'paymentHistory',
+          element: <PaymentHistory></PaymentHistory>
         },
         {
           path: 'manageItems',
