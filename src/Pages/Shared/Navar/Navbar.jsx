@@ -33,17 +33,19 @@ const Navbar = () => {
        
        </Link>   </li>
        {/* <li className="font-bold"> <Link to="/login">Log In</Link>   </li> */}
-       <li className="font-bold"> <Link to="/signup">Sign Up</Link>   </li>
+       {/* <li className="font-bold"> <Link to="/signup">Sign Up</Link>   </li> */}
        {/* <li className="font-bold"> <Link to="/secret">Secret</Link>   </li> */}
        
 
 {
-            user ? <>
-                {/* <span>{user?.displayName}</span> */}
-                <button onClick={handleLogOut} className="btn btn-ghost mb-2 pb-3 font-bold">LogOut</button>
-            </> : <>
-                <li><Link to="/login">Login</Link></li>
-            </>
+            // user ? <>
+            //     {/* <span>{user?.displayName}</span> */}
+            //     <button onClick={handleLogOut} className="btn btn-ghost mb-2 pb-3 font-bold">LogOut</button>
+            // </> : <>
+            //     <li><Link to="/login">Login</Link></li>
+            //     <li className="font-bold"> <Link to="/signup">Sign Up</Link>   </li>
+
+            // </>
         }
     
     </>
@@ -91,7 +93,33 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn  btn-error text-white">Get Started</a>
+    {/* <a className="btn  btn-error text-white">Get Started</a>*/}
+
+
+    {
+            user ? <>
+                {/* <span>{user?.displayName}</span> */}
+                <button onClick={handleLogOut} className="btn btn-error text-white font-bold">LogOut</button>
+            </> : <>
+
+
+             <Link to="/login">
+                
+                <button  className="btn mr-4 btn-primary text-white font-bold">Log In</button>
+                
+                </Link>   
+                
+                 <Link to="/signup">
+                
+                <button  className="btn btn-accent text-white font-bold ml-2">Sign Up</button>
+                
+                </Link>  
+
+            </>
+        }
+
+
+
   </div>
 </div>  
         </>

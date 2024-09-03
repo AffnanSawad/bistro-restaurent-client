@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SecTitle from "../../../Components/SecTitle/SecTitle";
 import featured from "../../../assets/home/featured.jpg"
 import './Featured.css'
@@ -26,7 +27,7 @@ const Featured = () => {
         <p> Aug 27 , 2024 </p>
         <p className=" uppercase">Where Can I Get Some</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laudantium.</p>
-        <button className="btn  my-5 btn-accent">Order Now</button>
+       <Link to='menu'>  <button className="btn  my-5 btn-accent">Order Now</button>   </Link>
 
     </div>
 

@@ -18,6 +18,9 @@ import ManageItems from "../Pages/Dashboard/Dshboard/ManageItems/ManageItems";
 import UpdateItem from "../Pages/Dashboard/Dshboard/UpdateItem/UpdateItem";
 import Payment from "../Pages/Dashboard/Dshboard/Payment/Payment";
 import PaymentHistory from "../Pages/Dashboard/Dshboard/PaymentHistory/PaymentHistory";
+import UserHome from "../Pages/Dashboard/Dshboard/UserHome/UserHome";
+import AdminHome from "../Pages/Dashboard/Dshboard/AdminHome/AdminHome";
+import Contact from "../Pages/Contact/Contact";
 // import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 // import SignUp from "../Pages/SignUp/SignUp";
 
@@ -54,6 +57,10 @@ import PaymentHistory from "../Pages/Dashboard/Dshboard/PaymentHistory/PaymentHi
             path: "/signup",
             element: <SignUp></SignUp>
           
+          },
+          {
+            path:'/contact',
+            element: <Contact></Contact>
           }
 
 
@@ -65,6 +72,12 @@ import PaymentHistory from "../Pages/Dashboard/Dshboard/PaymentHistory/PaymentHi
       path: 'dashboard',
       element: <PrivateRoute> <Dashboard></Dashboard> </PrivateRoute>,
       children: [
+
+        {
+          path: 'userHome',
+          element: <UserHome></UserHome>
+        },
+       
         {
           path: 'cart',
           element: <Cart></Cart>
@@ -95,6 +108,10 @@ import PaymentHistory from "../Pages/Dashboard/Dshboard/PaymentHistory/PaymentHi
           {
             path: 'users',
             element: <AllUsers></AllUsers>
+          },
+          {
+            path: 'adminHome',
+            element: <AdminHome></AdminHome>
           }
       ]
     }

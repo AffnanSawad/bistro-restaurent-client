@@ -74,16 +74,7 @@ const Dashboard = () => {
                             </li>
 
 
-                                <li>
-                                    <NavLink to="/dashboard/review">
-                                        <FaAd></FaAd>
-                                        Add a Review</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/dashboard/bookings">
-                                        <FaList></FaList>
-                                        My Bookings</NavLink>
-                                </li>
+                              
                             </>
                     }
                     {/* shared nav links */}
@@ -99,7 +90,7 @@ const Dashboard = () => {
                             Menu</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/order/contact">
+                        <NavLink to="/contact">
                             <FaEnvelope></FaEnvelope>
                             Contact</NavLink>
                     </li>
